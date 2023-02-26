@@ -268,6 +268,14 @@
           ```
           $ git pull
           ```
+  3. 원격 저장소와의 연결 끊기
+
+  - git remote remove : 현재 지역 저장소와 연결되어 있는 원격 저장소와의 연결을 끊는 명령어
+
+    <small>!! origin 저장소와의 연결을 끊는다</small>
+    ```
+    $ git remote remove origin
+    ```        
 -------------------------
 ### !! github에 SSH 원격 접속하기
 - SSH : "secure shell" 의 줄임말로 private key와 public key를 한 쌍으로 묶어 컴퓨터를 인증하는 방식이다 (기기를 한번 등록해 놓으면 빈번하게 로그인을 할 필요가 없다)
