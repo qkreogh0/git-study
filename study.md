@@ -175,39 +175,42 @@
 4. 브랜치
 
     <img src=https://techblog.woowahan.com/wp-content/uploads/img/2017-10-30/github-flow_graph_for_no_rebase.png>
-  - 커밋을 가리키는 포인터로 새 브런치를 만드는 것을 분기한다고 한다
+  - 커밋을 가리키는 포인터로 새 브랜치를 만드는 것을 분기한다고 한다
 
-    - git branch : 만들어져 있는 브랜치를 확인하거나 브랜치를 새로 만 드는 명령어
+    - git branch : 만들어져 있는 브랜치를 확인하거나 브랜치를 새로 만드는 명령어
+
+        <small>!! 브랜치를 확인</small> 
       ``` 
       $ git branch  
       ``` 
-        <small>!! 브랜치를 확인</small> 
+      <small>!! apple 브랜치 생성</small> 
       ``` 
       $ git branch apple  
       ```   
-      <small>!! apple 브랜치 생성</small> 
     - git log --oneline : 한 줄에 한 커밋씩 보여주는 명령어 
     - git log --branches : 브랜치마다 최신 커밋을 한눈에 보여주는 명령어
     - git log --all : 각 브랜치의 최신 커밋만이 아닌 모든 커밋을 보여주는 명령어
+      <small>!! 아래와 같이 쓸 수도 있다</small>  
       ``` 
       $ git log --oneline --branches  
       ``` 
-      <small>!! 위와 같이 쓸 수도 있다</small>  
+      <small>!! 브랜치와 커밋의 관계를 그래프로 보여준다</small>  
       ``` 
       $ git log --oneline --branches --graph  
       ``` 
-      <small>!! 브랜치와 커밋의 관계를 그래프로 보여준다</small>  
 
     - git switch : 브랜치를 전환시키는 명령어 
+
+      <small>!! apple 브랜치로 전환</small> 
       ``` 
       $ git switch apple  
       ``` 
-      <small>!! apple 브랜치로 전환</small> 
-    - git log branch1..branch2 : branch1 에는 없고 branch2 에만   있는  커밋을 보여주는 명령어
+    - git log branch1..branch2 : branch1 에는 없고 branch2 에만 있는 커밋을 보여주는 명령어
+    
+      <small>!! main 브랜치에는 없고 apple 브랜치에만 있는 커밋을   보여준다</small>
       ``` 
       $ git log main..apple 
       ``` 
-      <small>!! main 브랜치에는 없고 apple 브랜치에만 있는 커밋을   보여준다</small>
   - 원하는 작업을 마친후에 문제가 없을 시에 main 브랜치에 병합한다
     - git merge : HEAD 가 가리키고 있는 브랜치에 새로운 브랜치를 병합시키는 명령어
     ```
